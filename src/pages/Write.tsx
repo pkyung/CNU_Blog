@@ -124,7 +124,7 @@ const Write = () => {
     navigate('/');
   };
 
-  const fetchPostById = async (postId: number) => {
+  const fetchPostById = async (postId: string) => {
     const { data } = await getPostById(postId);
     const { post } = data;
     setTitle(post.title);
